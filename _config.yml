@@ -1,0 +1,32 @@
+---
+title: Theta Chi, Epsilon Psi
+timezone: America/New_York
+collections:
+  brothers:
+    title: Brothers
+    output: false
+  events:
+    title: Events
+    output: true
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+email: miraj@madebymiraj.com
+description: 'Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for Google search
+  results) and in your feed.xml site description.
+
+'
+baseurl: 
+url: http://thetachinjit.com
+twitter_username: jekyllrb
+github_username: jekyll
+markdown: kramdown
+gems:
+- jekyll-feed
+exclude:
+- Gemfile
+- Gemfile.lock
