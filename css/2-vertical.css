@@ -1,7 +1,9 @@
 /* [SLIDER] */
 #slider,  #slider .slide{
   text-align: center;
-  width: 500px;
+  font-size: 250%;
+  text-anchor: middle;
+  width: 1000px;
   height: 250px;
 }
 #slider {
@@ -15,7 +17,7 @@
   position: relative;
   bottom: 0;
   right: 0;
-  animation: slide-animation 60s infinite;
+  animation: slide-animation 70s 0s cubic-bezier(0.9,.85,.95,1.0) infinite forwards;
 }
 #slider .slide {
   position: relative;
@@ -25,28 +27,13 @@
 
 /* [ANIMATION] */
 @keyframes slide-animation {
-  0% { 
-    opacity: 0;
-    bottom: 0;
-  }
-  11% {
-    opacity: 1;
-    bottom: 0; 
-  }
-  22% { bottom: 100%; }
-  33% { bottom: 100%; }
-  44% { bottom: 200%; }
-  55% { bottom: 200%; }
-  66% { bottom: 300%; }
-  77% { bottom: 300%; }
-  88% {
-    opacity: 1;
-    bottom: 400%; 
-  }
-  100% {
-    opacity: 0;
-    bottom: 400%;
-  }
+  0%{opacity: 1;}
+  2%{opacity: 0}
+  10%{bottom: 0}
+  15%{opacity: 1}
+  95%{bottom: 2000%; opacity: 1}
+  100%{opacity: 0}
+
 }
 
 /* [DOES NOT MATTER] */
