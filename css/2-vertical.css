@@ -3,7 +3,7 @@
   text-align: center;
   font-size: 250%;
   text-anchor: middle;
-  width: 1000px;
+  width: 1200px;
   height: 250px;
 }
 #slider {
@@ -17,7 +17,7 @@
   position: relative;
   bottom: 0;
   right: 0;
-  animation: slide-animation 70s 0s cubic-bezier(0.9,.85,.95,1.0) infinite forwards;
+  animation: slide-animation 130s 0s  /*cubic-bezier(0.9,.85,.95,1.0)*/ infinite forwards;
 }
 #slider .slide {
   position: relative;
