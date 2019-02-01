@@ -1,6 +1,5 @@
 /* [SLIDER] */
 #slider,  #slider .slide{
-  position: center;
   text-align: center;
   font-size: 250%;
   text-anchor: middle;
@@ -37,11 +36,13 @@ mark{
   position: relative;
   bottom: 0;
   right: 0;
-
+  text-align: left;
   animation: slide-animation 70s linear 1.5s infinite forwards;
 }
 
-
+.container{
+  margin-left: unset;
+}
 
 /* [ANIMATION] */
 @keyframes slide-animation {
