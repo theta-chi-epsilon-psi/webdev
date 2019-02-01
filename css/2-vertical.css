@@ -2,8 +2,8 @@
 #slider,  #slider .slide{
   text-align: center;
   font-size: xx-large;
-  width: 500px;
-  height: 250px;
+  width: 100%;
+  height: 50%;
 }
 #slider {
   /*alignment: center;*/
