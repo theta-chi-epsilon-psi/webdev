@@ -17,12 +17,12 @@
   position: relative;
   bottom: 0;
   right: 0;
-  animation: slide-animation 60s infinite;
+  animation: slide-animation 60s 1s infinite both;
 }
 #slider .slide {
   position: relative;
   box-sizing: border-box;
-  padding: 10px 20px;
+  padding: 36% 10% 10% 10%;
 }
 
 mark{
@@ -33,28 +33,58 @@ mark{
 
 /* [ANIMATION] */
 @keyframes slide-animation {
-  0% { 
-    opacity: 0;
-    bottom: 0;
-  }
-  11% {
-    opacity: 1;
-    bottom: 0; 
-  }
-  22% { bottom: 100%; }
-  33% { bottom: 100%; }
-  44% { bottom: 200%; }
-  55% { bottom: 200%; }
-  66% { bottom: 300%; }
-  77% { bottom: 300%; }
-  88% {
-    opacity: 1;
-    bottom: 400%; 
-  }
-  100% {
-    opacity: 0;
-    bottom: 400%;
-  }
+    0% {
+        opacity: 0;
+        bottom: 0;
+    }
+    2.5%{
+        opacity: 1;
+        bottom: 0;}
+    5%{bottom: 100%} /*trad*/
+    7.5%{bottom: 100%}
+    10%{bottom: 200%;}/**man*/
+    12.5%{bottom: 200%;}
+    15%{bottom: 300%;}/*nurture*/
+    17.5%{bottom: 300%;}
+    20%{bottom: 415%;} /*Ennobled*/
+    22.5%{bottom: 415%;}
+    25%{bottom: 528%;} /*taken its place*/
+    27.5%{bottom: 528%;}
+    30%{bottom: 635%;}/**promote*/
+    32.5%{bottom: 635%;}
+    35%{bottom: 700%;}/*advance*/
+    37.5%{bottom: 700%;}
+    40%{bottom: 800%;}/*builder*/
+    42.5%{bottom: 800%;}
+    45%{bottom: 920%;}/*inspires*/
+    47.5%{bottom: 920%;}
+    50%{bottom: 1030%;}/*teach*/
+    52.5%{bottom: 1030%;}
+    55%{bottom: 1135%;}/*extol*/
+    57.5%{bottom: 1135%;}
+    60%{bottom: 1220%;}/*exacts*/
+    62.5%{bottom: 1220%;}
+    65%{bottom: 1320%;}/*extends*/
+    67.5%{bottom: 1320%;}
+    70%{bottom: 1420%;}/*primacy*/
+    72.5%{bottom: 1420%;}
+    75%{bottom: 1520%;}/*usefulness*/
+    77.5%{bottom: 1520%;}
+    80%{bottom: 1620%;}/*influence*/
+    82.5%{bottom: 1620%;}
+    85%{bottom: 1740%;} /*perpetuate*/
+    87.5%{bottom: 1740%;}
+    90%{bottom: 1840%;} /*therby serving*/
+    92.5%{bottom: 1840%;}
+    95%{                /*country*/
+        bottom: 1920%;
+    }
+    97.7%{opacity: 1;}
+    98%{bottom: 2020%;}
+    100%{               /*fellow man*/
+        opacity: 0;
+        bottom: 2021%;
+    }
 }
 
 /* [DOES NOT MATTER] */
