@@ -1,6 +1,7 @@
 /* [SLIDER] */
 #slider,  #slider .slide{
   text-align: center;
+  font-size: xx-large;
   width: 500px;
   height: 250px;
 }
@@ -22,6 +23,12 @@
   position: relative;
   box-sizing: border-box;
   padding: 10px 20px;
+}
+
+mark{
+  background-color: indianred;
+  color: white;
+  outline-color: black;
 }
 
 /* [ANIMATION] */
