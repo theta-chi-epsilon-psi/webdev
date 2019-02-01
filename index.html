@@ -22,7 +22,12 @@ layout: default
             {% assign blocks = src.blocks %}
             {% for block in blocks %}
               {% for line in block %}
-                <mark class="slide-text">{{line}}</mark>
+                {% if line %}
+                  <mark class="slide-text">{{line}}</mark>
+                {% else %}
+                  well that didn't work...
+                {% endif %}
+
               {% endfor %}
             {% endfor %}
 
