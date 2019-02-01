@@ -1,11 +1,13 @@
 /* [SLIDER] */
 #slider,  #slider .slide{
+  position: center;
   text-align: center;
   font-size: 250%;
   text-anchor: middle;
   width: 1200px;
   height: 250px;
 }
+
 #slider {
   /*alignment: center;*/
   overflow: hidden;
@@ -13,33 +15,41 @@
   font-size: 1.2em;
   /*background: #;*/
 }
-#slider .container {
-  position: relative;
-  bottom: 0;
-  right: 0;
-  animation: slide-animation 130s 0s  /*cubic-bezier(0.9,.85,.95,1.0)*/ infinite forwards;
-}
+
 #slider .slide {
+  counter-increment: slide-count;
+
   position: relative;
   box-sizing: border-box;
   padding: 10px 20px;
 }
 
+#slider .container {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  animation: slide-animation 70s linear 1.5s infinite forwards;
+}
+
+
+
 /* [ANIMATION] */
 @keyframes slide-animation {
-  0%{opacity: 1;}
-  2%{opacity: 0}
-  10%{bottom: 0}
-  15%{opacity: 1}
-  95%{bottom: 2000%; opacity: 1}
-  100%{opacity: 0}
-
+  4%{bottom: 0; opacity: 0}
+  6%{opacity: 0}
+  8%{opacity: 1}
+  93%{opacity: 1}
+  98%{opacity: 0}
+  100%{bottom: 2200%; }
+  /*98.5%{opacity: 0}
+  100%{bottom: 0}*/
 }
 
 /* [DOES NOT MATTER] */
 html, body {
   font-family: arial;
   background: #ffe9d8;
+  counter-reset: slide-count 0;
 }
 h1 {
   text-align: center;
