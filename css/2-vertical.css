@@ -2,7 +2,7 @@
 #slider,  #slider .slide{
   text-align: center;
   font-size: xx-large;
-  width: 100%;
+  width: 75%;
   height: 50%;
 }
 #slider {
@@ -22,7 +22,7 @@
 #slider .slide {
   position: relative;
   box-sizing: border-box;
-  padding: 36% 10% 10% 10%;
+  padding: 36% 10% 10% 35%;
 }
 
 mark{
