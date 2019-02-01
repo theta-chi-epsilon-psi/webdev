@@ -1,11 +1,11 @@
 /* [SLIDER] */
 #slider,  #slider .slide{
   text-align: center;
-  font-size: 250%;
+  font-size: 200%;
   text-anchor: middle;
-  width: 1500px;
-  height: 250px;
-
+  width: 50%;
+  height: 25%;
+  bottom: 50%;
 }
 
 mark{
@@ -13,15 +13,17 @@ mark{
   background-color: indianred;
   color: white;
   padding: 0;
+  width: inherit;
+  background-blend-mode: overlay;
 }
 
 #slider {
-  alignment: center;
   overflow: hidden;
   margin: 0 auto;
   font-size: 1.2em;
   background: antiquewhite url("../img/thetachi-emblem.jpg") no-repeat center;
-  background-size: 250px;
+  background-size: contain;
+  /*background-size: 30%;*/
   /*background: #;*/
 }
 
@@ -29,15 +31,22 @@ mark{
   counter-increment: slide-count;
   position: relative;
   box-sizing: border-box;
-  padding: 10px 20px;
+  padding: 1% 10% 10% 10%;
+  width: inherit;
 }
+
 
 #slider .container {
   position: relative;
   bottom: 0;
   right: 0;
-  text-align: left;
-  animation: slide-animation 70s linear 1.5s infinite forwards;
+  text-align: center;
+  animation: slide-animation 7s ease-out;
+  counter-reset: line-count;
+}
+
+#slider .slide-text{
+  counter-increment: line-count;
 }
 
 .container{
@@ -46,14 +55,10 @@ mark{
 
 /* [ANIMATION] */
 @keyframes slide-animation {
-  4%{bottom: 0; opacity: 0}
-  6%{opacity: 0}
-  8%{opacity: 1}
-  93%{opacity: 1}
-  98%{opacity: 0}
-  100%{bottom: 2200%; }
-  /*98.5%{opacity: 0}
-  100%{bottom: 0}*/
+  from {opacity: 0}
+  40%{opacity: 1}
+  60%{opacity: 1}
+  to{opacity: 0}
 }
 
 /* [DOES NOT MATTER] */
