@@ -9,8 +9,7 @@
 
 }
 
-#mark, mark{
-  alignment: left;
+mark{
   text-align: center;
   background-color: indianred;
   color: white;
