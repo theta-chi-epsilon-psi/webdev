@@ -10,8 +10,10 @@
 }
 /**/
 #mark, mark{
-  background-color: #ffffff;
-  color: red;
+  alignment: center;
+  text-align: center;
+  background-color: indianred;
+  color: white;
 }
 
 #slider {
