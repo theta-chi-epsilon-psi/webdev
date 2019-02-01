@@ -19,14 +19,13 @@ layout: default
           <p id="stanza">
 
             {% assign src = site.the-creed %}
-            <!--
-            {% assign blocks = src.blocks%}-->
-            Showing: {{src}}
-            <!--{% for block in blocks %}
+            {% assign blocks = src.blocks %}
+            {% for block in blocks %}
               {% for line in block %}
                 <mark class="slide-text">{{line}}</mark>
               {% endfor %}
-            {% endfor %}-->
+            {% endfor %}
+
           </p>
         </div>
       </div>
