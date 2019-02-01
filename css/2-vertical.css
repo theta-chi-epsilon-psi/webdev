@@ -6,6 +6,12 @@
   text-anchor: middle;
   width: 1500px;
   height: 250px;
+
+}
+
+#mark, mark{
+  background-color: #ffffff;
+  color: red;
 }
 
 #slider {
@@ -13,12 +19,13 @@
   overflow: hidden;
   margin: 0 auto;
   font-size: 1.2em;
+  background: antiquewhite url("../img/thetachi-emblem.jpg") no-repeat center;
+  background-size: 250px;
   /*background: #;*/
 }
 
 #slider .slide {
   counter-increment: slide-count;
-
   position: relative;
   box-sizing: border-box;
   padding: 10px 20px;
@@ -28,6 +35,7 @@
   position: relative;
   bottom: 0;
   right: 0;
+
   animation: slide-animation 70s linear 1.5s infinite forwards;
 }
 
