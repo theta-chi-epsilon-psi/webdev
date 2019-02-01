@@ -23,15 +23,18 @@
   child-align: middle;
   bottom: 0;
   right: 0;
-  animation: slide-animation 60s 1s infinite both;
+  animation: slide-animation 20s 0s infinite forwards;
 }
 #slider .slide {
   position: center;
   box-sizing: border-box;
+    width: 1200px;
+    height: 250px;
 }
 
 #slider .slide,p{
     alignment: center;
+    padding: 60px 20px 200px 20px;
 }
 
 mark{
@@ -59,40 +62,41 @@ mark{
     22.5%{bottom: 415%;}
     25%{bottom: 528%;} /*taken its place*/
     27.5%{bottom: 528%;}
-    30%{bottom: 635%;}/**promote*/
-    32.5%{bottom: 635%;}
-    35%{bottom: 700%;}/*advance*/
-    37.5%{bottom: 700%;}
-    40%{bottom: 800%;}/*builder*/
-    42.5%{bottom: 800%;}
+    30%{bottom: 640%;}/**promote*/
+    32.5%{bottom: 640%;}
+    35%{bottom: 710%;}/*advance*/
+    37.5%{bottom: 710%;}
+    40%{bottom: 810%;}/*builder*/
+    42.5%{bottom: 810%;}
     45%{bottom: 920%;}/*inspires*/
     47.5%{bottom: 920%;}
     50%{bottom: 1030%;}/*teach*/
     52.5%{bottom: 1030%;}
     55%{bottom: 1135%;}/*extol*/
     57.5%{bottom: 1135%;}
-    60%{bottom: 1220%;}/*exacts*/
-    62.5%{bottom: 1220%;}
-    65%{bottom: 1320%;}/*extends*/
-    67.5%{bottom: 1320%;}
-    70%{bottom: 1420%;}/*primacy*/
-    72.5%{bottom: 1420%;}
-    75%{bottom: 1520%;}/*usefulness*/
-    77.5%{bottom: 1520%;}
-    80%{bottom: 1620%;}/*influence*/
-    82.5%{bottom: 1620%;}
-    85%{bottom: 1740%;} /*perpetuate*/
-    87.5%{bottom: 1740%;}
-    90%{bottom: 1840%;} /*therby serving*/
-    92.5%{bottom: 1840%;}
+    60%{bottom: 1240%;}/*exacts*/
+    62.5%{bottom: 1240%;}
+    65%{bottom: 1360%;}/*extends*/
+    67.5%{bottom: 1360%;}
+    70%{bottom: 1450%;}/*primacy*/
+    72.5%{bottom: 1450%;}
+    75%{bottom: 1540%;}/*usefulness*/
+    77.5%{bottom: 1540%;}
+    80%{bottom: 1660%;}/*influence*/
+    82.5%{bottom: 1660%;}
+    85%{bottom: 1760%;} /*perpetuate*/
+    87.5%{bottom: 1760%;}
+    90%{bottom: 1860%;} /*therby serving*/
+    92.5%{bottom: 1860%;}
     95%{                /*country*/
-        bottom: 1920%;
+        bottom: 1960%;
     }
-    97.7%{opacity: 1;}
-    98%{bottom: 2020%;}
+    96.5%{bottom: 1960%;opacity: 1}
+    98.6%{bottom: 2100%; opacity: .8}
+    99%{opacity: .5}
     100%{               /*fellow man*/
         opacity: 0;
-        bottom: 2021%;
+        bottom: 2100%;
     }
 }
 
