@@ -2,18 +2,23 @@
 #slider,  #slider .slide{
   text-align: center;
   font-size: xx-large;
-  width: 75%;
-  height: 25%;
+    width: 100%;
+    height: 25%;
+    margin: auto;
 }
 #slider {
   /*alignment: center;*/
+    text-align: center;
   overflow: hidden;
   margin: 0 auto;
   font-size: 1.2em;
+    width: 1500px;
+    height: 250px;
   background: url("../img/thetachi-emblem-no-background.jpg") center no-repeat;
   background-size: contain;
 }
 #slider .container {
+    text-align: center;
   position: relative;
   child-align: middle;
   bottom: 0;
@@ -21,9 +26,12 @@
   animation: slide-animation 60s 1s infinite both;
 }
 #slider .slide {
-  position: relative;
+  position: center;
   box-sizing: border-box;
-  padding: 10px 20px /*36% 10% 10% 35%*/;
+}
+
+#slider .slide,p{
+    alignment: center;
 }
 
 mark{
