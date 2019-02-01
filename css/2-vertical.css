@@ -15,7 +15,7 @@
 }
 #slider .container {
   position: relative;
-    child-align: middle;
+  child-align: middle;
   bottom: 0;
   right: 0;
   animation: slide-animation 60s 1s infinite both;
