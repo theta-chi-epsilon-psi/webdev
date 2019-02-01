@@ -23,7 +23,7 @@
 #slider .slide {
   position: relative;
   box-sizing: border-box;
-  padding: 36% 10% 10% 35%;
+  padding: 10px 20px /*36% 10% 10% 35%*/;
 }
 
 mark{
