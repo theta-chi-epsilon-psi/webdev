@@ -9,7 +9,8 @@
   overflow: hidden;
   margin: 0 auto;
   font-size: 1.2em;
-  /*background: #;*/
+  background: url("../img/thetachi-emblem-no-background.jpg") center no-repeat;
+  background-size: contain;
 }
 #slider .container {
   position: relative;
