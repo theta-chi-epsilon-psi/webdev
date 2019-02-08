@@ -18,6 +18,7 @@
   background-size: contain;
 }
 #slider .container {
+    font-family: News Gothic, Garamond, cursive;
     text-align: center;
   position: relative;
   child-align: middle;
@@ -31,8 +32,8 @@
 }
 
 #slider .slide,p{
-    padding-top: 6%;
-    padding-bottom: 12%;
+    padding-top: 4%;
+    padding-bottom: 14%;
     alignment: center;
 }
 
@@ -46,12 +47,16 @@ mark{
 @keyframes slide-animation {
 
     /*NOTES: 21 Lines,
+    - 2 seconds of transition time,
+    - 2.6 seconds of viewing time
+    - bottom value should increase by the total padding of each slide element
+    with each advancement in order to avoid text skewing across background
     */
 
-
-    from{}
+    from{opacity: 0}
+    /*[Fade-in]*/
         /*I believe in Theta Chi*/
-    2%{bottom: 0}
+    2%{bottom: 0; opacity: 1}
     4.6%{bottom: 108%}
         /*It's traditions and its ideals*/
     6.6%{bottom: 108%}
@@ -113,9 +118,12 @@ mark{
     91.8%{bottom: 2168%}
         /*and my fellow man.*/
     93.8%{bottom: 2168%}
-    96.4%{bottom: 2276%}
-        /*[Fade Out...]*/
-    98.4%{bottom: 2276%}
+    96.4%{bottom: 2276%; opacity: 1}
+        /*
+            *     *    *
+        */
+    /*[Fade Out...]*/
+    98.4%{bottom: 2276%; opacity: 0}
     to{bottom: 2384%}
 
 }
